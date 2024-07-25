@@ -1,20 +1,28 @@
 particlesJS("particles-js", {
   particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
+    number: {
+      value: 128,
+      density: { enable: true, value_area: 868.0624057955 }
+    },
     color: { value: "#ffffff" },
     shape: {
-      type: "circle",
-      stroke: { width: 0, color: "#000000" },
+      type: "polygon",
+      stroke: { width: 0, color: "#ffffff" },
       polygon: { nb_sides: 5 },
       image: { src: "img/github.svg", width: 100, height: 100 }
     },
     opacity: {
-      value: 0.5,
+      value: 0.48927153781200905,
       random: false,
-      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+      anim: {
+        enable: false,
+        speed: 0.5,
+        opacity_min: 0.1998001998001998,
+        sync: false
+      }
     },
     size: {
-      value: 3,
+      value: 2,
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
     },
@@ -22,13 +30,13 @@ particlesJS("particles-js", {
       enable: true,
       distance: 150,
       color: "#ffffff",
-      opacity: 0.4,
-      width: 1
+      opacity: 0.5,
+      width: 1.2626362266116362
     },
     move: {
       enable: true,
-      speed: 6,
-      direction: "none",
+      speed: 2,
+      direction: "right",
       random: false,
       straight: false,
       out_mode: "out",
@@ -40,7 +48,7 @@ particlesJS("particles-js", {
     detect_on: "canvas",
     events: {
       onhover: { enable: true, mode: "repulse" },
-      onclick: { enable: true, mode: "push" },
+      onclick: { enable: false, mode: "none" },
       resize: true
     },
     modes: {
