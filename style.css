@@ -60,6 +60,7 @@
 p {
     font-size: 35px;
     font-family: 'Montserrat';
+    color: #C4BEBE;
 }
 
 .container-grid {
@@ -153,7 +154,235 @@ h2{
 
 }
 
+/* Contate-me */
+
+.contate-me {
+    background-color: #0a0013;
+}
+
+.contate-me span{
+    color: #FF9900;
+    margin-left: 20px;
+}
+
+.contate-me .container-grid{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contate-me p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-size: 35px;
+    width: 40%;
+    margin-top: 10%;
+}
+
+.container-contatos{
+    width: 100%;
+    margin-top: 10%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.contate-me #redes {
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+
+}
+
+@media screen and (max-width:1320px){
+
+    p {
+       
+        font-size: 25px;
+    
+    }
+    
+    #particles-js p {
+        font-size: 70px;
+    }
+
+    #particles-js span{
+        font-size: 45px;
+    }
+
+    .sobre p{
+        font-size: 25px;
+
+        width: 400px;
+    }
+
+    .sobre img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .skills #logos {
+        height: 100px;
+        width: 100px;
+    }
+
+    h2{
+        font-size: 55px;
+        font-family: sans-serif;
+        color: #C4BEBE;
+    
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        
+    }
+
+    .contate-me #redes{
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+
+@media screen and (max-width:1080px){
+    #particles-js p {
+        font-size: 50px;
+    }
+    
+    #particles-js span{
+        font-size: 35px;
+    };
+    
+
+}
+
+@media screen and (max-width: 900px){
+    #particles-js p{
+        font-size: 40px;
+    }
+    
+    #particles-js span{
+        font-size: 25px
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    .sobre span{
+        margin-left: 10px;
+    }
+    
+    .sobre p{
+        font-size: 20px;
+        width: 300px;
+    }
+    
+    .sobre img{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .skills .container-cards {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: 300px;
+        margin-top: 25%
+      
+    }
+
+    .skills p {
+        font-size: 20px;
+    }
+    
+    .contate-me p{
+        font-size: 20px;
+        margin-top: 20%;
+    }
+
+    .contate-me #redes {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h2 {
+        font-size: 30px
+    }
+
+    #particles-js p{
+        font-size: 35px;
+        top: 40%;
+        right: 15%;
+    }
+
+    #particles-js span{
+        font-size: 20px
+    }
 
 
+    .conteudo-sobre {
+        margin-top: 15%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #particles-js p{
+        font-size: 30px;
+        top: 40%;
+        right: 10%;
+    }
+
+    #particles-js span{
+        font-size: 20px
+    }
+
+
+
+    .skills #logos {
+        height: 75px;
+        width: 75px;
+
+        margin-left: 15px;
+    }
+
+    .skills p {
+        font-size: 18px;
+    }
+
+    .contate-me .container-grid {
+        height: 65%;
+    }
+
+    .contate-me #redes {
+        height: 50px;
+        width: 50px;
+        margin-left: 15px;
+       
+    }
+
+    .contate-me .container-contatos{
+        margin-top: 20%;
+    }
+
+    .contate-me{
+        height: 65vh;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    h2{
+        font-size: 24px;
+    }
+}
 
 
