@@ -158,6 +158,7 @@ h2{
 
 .contate-me {
     background-color: #0a0013;
+    height: 70vh;
 }
 
 .contate-me span{
@@ -170,32 +171,49 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    height: 80%;
 }
 
 .contate-me p{
     display: flex;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    flex-direction: column;
     
     font-size: 35px;
     width: 40%;
     margin-top: 10%;
 }
 
+.contate-me h2{
+    margin-bottom: 100px;
+    
+}
+
+
+/* footer */
+
+footer {
+    background-color: #0a0013;
+}
+
+footer .container-grid{
+    height: 220px;
+}
+
 .container-contatos{
-    width: 100%;
-    margin-top: 10%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.contate-me #redes {
-    height: 150px;
-    width: 150px;
+.container-contatos #redes {
+    height: 50px;
+    width: 50px;
     margin-left: 30px;
+    
 
 }
 
@@ -242,10 +260,6 @@ h2{
         
     }
 
-    .contate-me #redes{
-        height: 100px;
-        width: 100px;
-    }
     
 }
 
@@ -305,10 +319,7 @@ h2{
         margin-top: 20%;
     }
 
-    .contate-me #redes {
-        height: 75px;
-        width: 75px;
-    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -363,8 +374,6 @@ h2{
     }
 
     .contate-me #redes {
-        height: 50px;
-        width: 50px;
         margin-left: 15px;
        
     }
