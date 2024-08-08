@@ -128,7 +128,7 @@ h2{
     background-color: #0a0013;
 }
 
-.skills .container-cards{
+.skills .hidden{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,7 +214,6 @@ footer .container-grid{
     width: 50px;
     margin-left: 30px;
     
-
 }
 
 @media screen and (max-width:1320px){
@@ -395,3 +394,10 @@ footer .container-grid{
 }
 
 
+#hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
