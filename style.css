@@ -88,6 +88,7 @@
 
 .espacamento {
     height: 100vh;
+    background-color: #0a0013;
 }
 /* Sobre */
 
@@ -416,6 +417,14 @@ footer .container-grid{
 
     .skills .container-grid{
         height: 100%;
+    }
+
+    .container-contatos {
+        justify-content: space-between;
+    }
+    
+    .container-contatos #redes {
+        margin-left: 0px;
     }
 }
 
