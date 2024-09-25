@@ -49,6 +49,40 @@
     font-size: 60px;
     text-shadow: 0 0 5px #fff;
     letter-spacing: 4px;
+
+    display: block;
+
+    border-right: 6px solid #C4BEBE;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: 
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite
+    ;
+}
+
+/* Animação */
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes cursor {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50%{
+        border-color: #c4bebe;
+    }
 }
 
 
@@ -118,7 +152,7 @@ h2{
 
 .conteudo-sobre img{
     border-radius: 5px;
-    border: 2px solid orange;
+    border: 2px solid #C4BEBE;
 }
 
 
@@ -128,7 +162,7 @@ h2{
     background-color: #0a0013;
 }
 
-.skills .hidden{
+.skills .logo-skills{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,11 +188,52 @@ h2{
 
 }
 
+
+/* Animação da seção skills */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateY(60%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform:translateY(0%);
+    transition: all 2s;
+}
+
+.logo-skills :nth-child(2){
+    transition-delay: 0.3s;
+}
+
+.logo-skills :nth-child(3){
+    transition-delay: 0.6s;
+}
+
+.logo-skills :nth-child(4){
+    transition-delay: 0.9s;
+}
+
+.logo-skills :nth-child(5){
+    transition-delay: 1.2s;
+}
+
+.logo-skills :nth-child(6){
+    transition-delay: 1.5s;
+}
+
 /* Contate-me */
 
 .contate-me {
     background-color: #0a0013;
     height: 70vh;
+}
+
+.contate-me h2{
+    padding-top: 50px;
 }
 
 .contate-me span{
@@ -169,6 +244,7 @@ h2{
 .contate-me .container-grid{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 
@@ -182,13 +258,9 @@ h2{
     
     font-size: 35px;
     width: 40%;
-    margin-top: 10%;
-}
-
-.contate-me h2{
-    margin-bottom: 100px;
     
 }
+
 
 
 /* footer */
@@ -300,7 +372,7 @@ footer .container-grid{
         width: 200px;
     }
     
-    .skills .container-cards {
+    .skills  .logo-skills {
         flex-direction: column;
         flex-wrap: wrap;
 
@@ -341,6 +413,10 @@ footer .container-grid{
         margin-top: 15%;
         flex-direction: column;
     }
+
+    .skills .container-grid{
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -361,7 +437,6 @@ footer .container-grid{
         height: 75px;
         width: 75px;
 
-        margin-left: 15px;
     }
 
     .skills p {
@@ -394,10 +469,4 @@ footer .container-grid{
 }
 
 
-#hidden {
-    opacity: 0;
-}
 
-.show {
-    opacity: 1;
-}

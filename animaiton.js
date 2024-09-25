@@ -5,7 +5,6 @@ const elements = document.querySelectorAll('.hidden');
 
 const myObserver = new IntersectionObserver((elements) => { 
     elements.forEach(( entry ) => {
-        console.log(entry.target)
         if (entry.isIntersecting){
             entry.target.classList.add('show')
         } else{
